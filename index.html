@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="text/css" rel="stylesheet" href="style.css"/>
+    <title>Music Blog</title>
+<!-- 
+    Holds metadata/ information we don't see, 
+    -links, viewport info, document title, etc.
+ -->
+ <!-- 3 ways to use css with our doc:
+    1. embed the CSS within a <style> tag 
+    2. inline styling within another element (this will override a overall style tag)
+    3. link a stylesheet to our html document-->
+
+  <!-- <style> 
+      body {
+          background-color: antiquewhite;
+      }
+  </style> -->
+    
+</head>
+<!-- <body style="background-color: darkolivegreen;"> this is inline styling and this will take precedence over he general style tag  -->
+    <header>
+        <h1>Music Blog</h1>
+
+        <nav>
+            <ul>
+                <!-- (li>span{Home})+(li>a)*3 -->
+                <li><span>Home</span>
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Forum</a></li>
+
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+   
+    <section>
+        <h2>Welcome</h2>
+        <!-- main specifies the main content. 
+        There can be only one!
+        Cannot be a descendant (child) of:
+            header, nav, article, aside, or footer
+        (meaning main cannot be contained within it)-->
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Amet velit dignissimos expedita est asperiores, fuga accusamus 
+                    incidunt pariatur quo labore nemo repellat inventore, obcaecati 
+                    optio cum! Necessitatibus recusandae facere perspiciatis?
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eum laborum id aperiam asperiores quibusdam maxime? Nobis eius atque cupiditate sed vero dolorem illo laudantium numquam recusandae? Neque, illo quis?
+                </p>
+            </article>
+
+            <aside>
+                <h2>Favorite Albums</h2>
+                <!-- (a>img)*4 this creates 4 linkable images or however many you specify in the number -->
+                <a target="_blank" href="./assets/220px-Enya7.jpg"><img src="./assets/220px-Enya7.jpg" alt="A Day Without Rain - Enya"></a>
+                <a target="blank" href="./assets/DMB_Crash.png"><img src="./assets/DMB_Crash.png" alt="Crash - Dave Matthews Band"></a>
+                <a  target="blank" href="./assets/Sylvanessowhatnow.jpg"><img src="./assets/Sylvanessowhatnow.jpg" alt="What Now? - Sylvan Esso"></a>
+                <a target="blank" href="./assets/TomPettyGreatestHits.jpg"><img src="./assets/TomPettyGreatestHits.jpg" alt="Greatest Hits - Tom Petty"></a> 
+            </aside>
+        </main>
+    </section>
+
+    <!-- footers can contain: authorship info, copyright, contact info, sitemap, related links/
+        documents, back to top link -->
+
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod facilis porro nam, labore culpa quibusdam neque reiciendis in repellendus!</p>
+        </footer>    
+
+</body>
+</html>
